@@ -8,10 +8,27 @@
 body, button{
       font-family: 'Barlow Condensed', sans-serif; 
       padding: 0 5%;
+      background-color: #fdf6fb;
 }
 
 button{
       font-family: 'Barlow Condensed', sans-serif; 
+}
+
+.top_title_40px{
+      font-size: 40px;
+      font-weight: 600;
+      color: #0B0223;
+}
+
+.title_90px{
+      font-size: 90px;
+      font-weight: 800;
+      color: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+}
+
+.p_20px{
+      font-size: 20px;
 }
 
 
@@ -79,10 +96,6 @@ button{
       font-weight: 400;
 }
 
-/* .menu_btn img{
-      width: 15%;
-} */
-
 .follow_btn_icon{
       display: flex;
       justify-content: space-evenly;
@@ -95,18 +108,91 @@ button{
 
 /* navbar end */
 
+/* banner start */
+.banner{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+
+.banner_lists{
+      margin-bottom: 40px;
+}
+
+.list{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-bottom: 17px;
+      margin-top: 10px;
+}
+
+.list img{
+      width: 20px;
+      margin-right: 20px;
+}
+
+.signin_btn{
+      padding: 18px 40px;
+      font-size: 18px;
+      font-weight: 500;
+      border-radius: 50px;
+      border: none;
+      background-color: #FF42A5;
+      color: #fff;
+      letter-spacing: 1px;
+      margin-right: 18px;
+}
+
+.go_btn{
+      padding: 18px 40px;
+      font-size: 18px;
+      font-weight: 500;
+      border-radius: 50px;
+      border: none;
+      background-color: #4EC5F7;
+      color: #fff;
+      letter-spacing: 1px;
+}
+
+.banner_image img{
+      width: 100%;
+}
+/* banner end */
+
 
 /* =======================
 RESPONSIVE CODE START
 ========================= */
 
 /* MOBILE DEVICE */
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   
       .navbar, .menu{
             flex-direction: column;
             gap: 20px;
            
+      }
+
+      .banner{
+            flex-direction: column-reverse;
+            text-align: center;
+      }
+
+      .banner_text{
+            margin-top: 60px;
+      }
+
+      .banner_image{
+            margin-top: 30px;
+      }
+      
+    }
+
+    @media (min-width: 768px) and (max-width: 992px) {
+  
+      .banner_text,.banner_image{
+            width: 50%;
       }
       
     }
