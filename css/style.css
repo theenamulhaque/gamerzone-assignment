@@ -91,6 +91,7 @@ a{
 
 .logo_inner h2{
       font-size: 45px;
+      color: #0B0223;
 }
 
 .logo_font_color{
@@ -109,20 +110,36 @@ a{
 .menu a {
       text-decoration: none;
       font-size: 18px;
+      transition: 0.3s ease-in-out;
 }
 
-.menu_btn{
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      justify-content: space-between;
+.menu a:hover{
+      color: #FF42A5;
+      transition: 0.3s ease-in-out;
+}
+
+.nav_btn{
+      display: flex;
+      justify-content: center;
       align-items: center;
-      padding: 0px 15px;
-      width: 221px;
-      height: 56px;
       background-color: rgba(11, 2, 35, 0.10);
-      border: none;
+      padding: 5px 15px;
       border-radius: 8px;
-      cursor: pointer;
+      font-weight: 500;
+      transition: 0.5s ease-in-out;
+      border: 1px solid transparent;
+}
+
+.nav_btn:hover{
+      background-color: transparent;
+      border: 1px solid #FF42A5;
+      color: #FF42A5;
+      transition: 0.5s ease-in-out;
+}
+
+.nav_btn img{
+      width: 30px;
+      margin-left: 10px;
 }
 
 .menu_btn:hover{
@@ -162,13 +179,14 @@ a{
       display: flex;
       justify-content: flex-start;
       align-items: center;
-      margin-bottom: 17px;
-      margin-top: 10px;
 }
 
 .list img{
       width: 20px;
       margin-right: 20px;
+}
+.banner_btn_group {
+      display: flex;
 }
 
 .banner_image img{
@@ -178,10 +196,35 @@ a{
 .banner_pink_btn{
       background-color: #FF42A5;
       margin-right: 15px;
+      transition: 0.3s ease-in-out;
+}
+
+.banner_pink_btn:hover {
+      background-color: antiquewhite;
+      color: #FF42A5;
+      transition: 0.3s ease-in-out;
 }
 
 .banner_blue_btn{
       background-color: #4EC5F7;
+      transition: 0.3s ease-in-out;
+}
+
+.banner_blue_btn:hover{
+      background-color: antiquewhite;
+      color: #FF42A5;
+      transition: 0.3s ease-in-out;
+}
+
+.banner_lists ul li{
+      list-style: none;
+      padding: 8px;
+
+}
+
+.banner_lists ul li img{
+      width: 20px;
+      margin-right: 20px;
 }
 
 /* banner end */
@@ -192,6 +235,7 @@ a{
       display: flex;
       justify-content: space-between;
       align-items: center;
+      padding: 40px 5%;
 }
 
 
@@ -241,6 +285,11 @@ a{
 
 .card img{
       width: 100%;
+}
+
+.card p{
+      font-size: 17px;
+      font-weight: 500;
 }
 
 .card_img{
@@ -393,6 +442,13 @@ a{
       color: #FF42A5;
       background-color: #fff;
       margin-bottom: 60px;
+      transition: 0.3s ease-in-out;
+}
+
+.careers_btn:hover{
+      background-color: #c90068;
+      color: #fff;
+      transition: 0.3s ease-in-out;
 }
 
 .careers_image{
@@ -401,28 +457,328 @@ a{
 
 /* careers section end */
 
+/* btn-group section start */
+
+.btn_group{
+      padding: 80px 8%; 
+      padding-bottom: 40px;
+}
+
+.btn_group_inner{
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: wrap;
+
+}
+
+.btn_group_one{
+      display: flex;
+      justify-content: space-between;
+      column-gap: 10px;
+      align-items: center;
+      padding: 10px 10px;
+      border-radius: 50px;
+      transition: 0.5s;
+      border: 1px solid #ffffff;
+      margin-bottom: 30px;
+}
 
 
+.btn_group_one:hover{
+      transition: 0.2s ease-in-out;
+      border: 1px solid #F00CE8;
+      
+}
 
+.btn_group_one:hover h6{
+      transition: 0.5s ease-in-out;
+      color: #FF42A5;
+      
+}
 
+.btn_group_one h6{
+      font-size: 18px;
+      letter-spacing: 0px;
+      transition: 0.5s ease-in-out;
+}
 
+.btn_group_inner_two{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      column-gap: 5px;
+      row-gap: 10px;
+      padding: 0 9%;
+}
 
+/* btn-group section end */
 
+/* footer section start */
 
+.footer{
+      padding: 120px 8%; 
+      background-color: #0B0223;
+      margin: 0 auto;
+}
 
+.footer_logo_inner h2{
+      color: #ffffff;
+}
 
+.footer_logo_inner, .footer_menu{
+      display: flex;
+      justify-content: center;
+      color: #fff; 
+}
 
+.footer_menu{
+      display: flex;
+      justify-content: center;
+      color: #fff; 
+      gap: 40px;
+      padding: 60px 0;
+}
 
+.footer_menu a{
+      color: #fff; 
+}
 
+.footer_menu a:hover{
+      color: #F00CE8; 
+}
 
+.footer_social_icon{
+      text-align: center;
+}
 
+.footer_social_icon a img{
+      width: 20px;
+      margin: 10px 30px;
+}
+
+.footer_social_icon a:hover{
+      color: #FF42A5;
+}
+
+.footer_menu_quicklink{
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 30px 0;
+}
+
+.footer_menu_quicklink a:hover{
+      color: #F00CE8; 
+}
+
+.footer_menu_quicklink a{
+      color: rgba(255, 255, 255, 0.60);
+      font-style: 10px;
+}
+
+.copyright{
+      color: rgba(255, 255, 255, 0.60);
+      text-align: center;
+      letter-spacing: 3px;
+      padding-bottom: 20px;
+}
+
+/* footer section end */
 
 /* =======================
 RESPONSIVE CODE START
 ========================= */
+@media (max-width: 441px){
+
+      .navbar, .menu{
+            flex-direction: column;
+            gap: 20px;
+           
+      }
+
+      .banner{
+            flex-direction: column-reverse;
+            text-align: center;
+      }
+
+      .banner_text{
+            margin-top: 60px;
+            width: 100%;
+      }
+
+      .banner_image{
+            margin-top: 30px;
+            width: 100%;
+      }
+
+      .gamer{
+            flex-direction: column;
+      }
+
+      .top_title_40px{
+            font-size: 40px;
+            text-align: left;
+      }
+
+      .title_90px{
+            text-align: left;
+      }
+
+      .banner_lists ul li{
+            text-align: start;
+      }
+
+      .banner_pink_btn,.banner_blue_btn{
+            font-size: 12px;
+      }
+
+      /*  */
+
+      .gamer_image, .gamer_text{
+            width: 100% !important;
+            margin-top: 100px;
+            text-align: center;
+      }
+
+      .gamer_title{
+            text-align: center;
+      }
+
+      .gamer_sm-title{
+            margin-top: 80px;
+            margin-bottom: 20px;
+      }
+
+      .section_paragraph{
+            text-align: center;
+      }
+
+      /*  */
+
+      .online_game_cards{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 0px;
+      }
+
+      .online_game_title{
+            text-align: center;
+      }
+
+      .play_instantly{
+            display: flex;
+            flex-direction: column;
+            padding: 0 50px;
+      }
+
+      .play_instantly>.play_instantly_images{
+            grid-column: 1;
+      }
+
+      .play_instantly>.play_instantly_text{
+            grid-column: 2;
+            text-align: center;
+      }
+
+      .float_img{
+            position: absolute;
+            width: 40%;
+            bottom: -50px;
+            left: -55px;
+      }
+
+      .play_games{
+            display: flex;
+            flex-direction: column-reverse;
+            padding: 0 50px;
+            margin-top: 100px;
+      }
+
+      .play_games_text,.play_games_para{
+            text-align: center !important;
+      }
+
+      .games_float_img{
+            position: absolute;
+            width: 40%;
+            bottom: -50px;
+            right: -40px;
+      }
+
+      /*  */
+
+      .careers_btn {
+            font-size: 10px;
+      }
+
+      .careers{
+            flex-direction: column;
+            padding: 80px 0;
+            margin-top: 120px;
+            background-image: none;
+      }
+
+      .careers_text{
+            padding: 0px;
+            width: 90%;
+      }
+
+      .career_para{
+            text-align: left;
+      }
+
+      .career_text_inner_left ul li{
+            font-size: 14px;
+      }
+
+      .career_text_inner_right ul li{
+            font-size: 14px;
+      }
+
+      .careers_btn{
+            margin-bottom: 200%;
+      }
+
+      .careers_image{
+            background-image: url('../images/Group\ 65.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 100%;
+            height: 40vh;
+            margin-top: 80px;
+      }
+
+      .btn_group_inner{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 5px;
+            row-gap: 10px;    
+      }
+
+      .btn_group_one h6{
+            font-size: 12px;
+      }
+
+      .footer_menu{
+            flex-wrap: wrap;
+      }
+
+
+      .btn_group_inner{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 5px;
+            row-gap: 10px;    
+      }
+
+      .footer_menu{
+            flex-wrap: wrap;
+      }
+}
 
 /* MOBILE DEVICE */
-@media (max-width: 768px) {
+@media (min-width: 441px) and (max-width: 768px) {
   
       .navbar, .menu{
             flex-direction: column;
@@ -546,6 +902,21 @@ RESPONSIVE CODE START
             width: 100%;
             height: 40vh;
             margin-top: 80px;
+      }
+
+      .btn_group_inner{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 5px;
+            row-gap: 10px;    
+      }
+
+      .btn_group_one h6{
+            font-size: 12px;
+      }
+
+      .footer_menu{
+            flex-wrap: wrap;
       }
 
     }
