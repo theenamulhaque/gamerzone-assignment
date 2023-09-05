@@ -217,6 +217,66 @@ a{
 
 /* gamer section end */
 
+/* online-game section start */
+
+.online_game{
+      padding: 120px 0;
+}
+
+.online_gamer_title{
+      text-align: center;
+}
+
+.online_game_cards{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      margin-top: 40px;
+}
+
+.card img{
+      width: 100%;
+}
+
+.card_img{
+      position: relative;
+      z-index: 0;
+}
+
+.card_overlay{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 0%;
+      background-color: #0707079c;
+      z-index: 1000;
+      border-radius: 14px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+}
+
+.card_overlay img{
+      width: 40px;
+      cursor: pointer;
+}
+
+.overlay_title{
+      color: #FF42A5;
+}
+
+.card_img:hover .card_overlay{
+      height: 100%;
+      transition: 0.5s ease-in-out;
+}
+
+
+
+/* online-game section end */
+
 
 
 
@@ -280,6 +340,15 @@ RESPONSIVE CODE START
       .section_paragraph{
             text-align: center;
       }
+
+      .online_game_cards{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 0px;
+
+      }
+
+
     }
 
     /* tab */
