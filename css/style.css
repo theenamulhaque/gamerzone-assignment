@@ -11,8 +11,8 @@ body, button{
       background-color: #fdf6fb;
 }
 
-button{
-      font-family: 'Barlow Condensed', sans-serif; 
+a{
+      text-decoration: none;
 }
 
 .top_title_40px{
@@ -24,11 +24,59 @@ button{
 .title_90px{
       font-size: 90px;
       font-weight: 800;
-      color: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+}
+
+.font_gradient{
+      background: linear-gradient(to bottom, #F00CE8 22%, #7A0ACF 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+}
+
+.section_paragraph{
+      color: #534C64;
+      text-align: right;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 30px;
+      margin-top: 20px;
+      margin-bottom: 39px;
 }
 
 .p_20px{
       font-size: 20px;
+      margin-top: 24px;
+      font-weight: 400;
+}
+
+.p_30px{
+      color: #26232c;
+      font-size: 30px;
+      font-weight: 700;
+}
+
+.pink_btn{
+      padding: 18px 40px;
+      font-size: 18px;
+      font-weight: 500;
+      border-radius: 50px;
+      border: none;
+      background-color: #FF42A5;
+      color: #fff;
+      letter-spacing: 1px;
+      font-family: 'Barlow Condensed', sans-serif; 
+}
+
+.blue_btn{
+      padding: 18px 40px;
+      font-size: 18px;
+      font-weight: 500;
+      border-radius: 50px;
+      border: none;
+      background-color: #4EC5F7;
+      color: #fff;
+      letter-spacing: 1px;
+      font-family: 'Barlow Condensed', sans-serif; 
 }
 
 
@@ -132,33 +180,58 @@ button{
       margin-right: 20px;
 }
 
-.signin_btn{
-      padding: 18px 40px;
-      font-size: 18px;
-      font-weight: 500;
-      border-radius: 50px;
-      border: none;
-      background-color: #FF42A5;
-      color: #fff;
-      letter-spacing: 1px;
-      margin-right: 18px;
-}
-
-.go_btn{
-      padding: 18px 40px;
-      font-size: 18px;
-      font-weight: 500;
-      border-radius: 50px;
-      border: none;
-      background-color: #4EC5F7;
-      color: #fff;
-      letter-spacing: 1px;
-}
-
 .banner_image img{
       width: 100%;
 }
 /* banner end */
+
+/* gamer section start */
+
+.gamer{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+
+
+.gamer_image{
+      width: 70% !important;
+}
+
+.gamer_image img{
+      width: 100%;
+}
+
+.gamer_text{
+      width: 30%;
+}
+
+.gamer_text{
+      text-align: end;
+}
+
+.gamer_sm-title{
+      margin-top: 40px;
+      bottom: 20px;
+}
+
+/* gamer section end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* =======================
@@ -181,18 +254,46 @@ RESPONSIVE CODE START
 
       .banner_text{
             margin-top: 60px;
+            width: 100%;
       }
 
       .banner_image{
             margin-top: 30px;
+            width: 100%;
       }
-      
+
+      .gamer{
+            flex-direction: column;
+      }
+
+      .gamer_image, .gamer_text{
+            width: 100% !important;
+            margin-top: 100px;
+            text-align: center;
+      }
+
+      .gamer_sm-title{
+            margin-top: 80px;
+            margin-bottom: 20px;
+      }
+
+      .section_paragraph{
+            text-align: center;
+      }
     }
+
+    /* tab */
 
     @media (min-width: 768px) and (max-width: 992px) {
   
       .banner_text,.banner_image{
             width: 50%;
+      }
+
+      .gamer_image, .gamer_text{
+            width: 70% !important;
+            margin-top: 100px;
+            text-align: center;
       }
       
     }
