@@ -7,8 +7,12 @@
 
 body, button{
       font-family: 'Barlow Condensed', sans-serif; 
-      padding: 0 5%;
       background-color: #fdf6fb;
+}
+
+.section_padding{
+      padding: 0 5%;
+      margin: 0 auto;
 }
 
 a{
@@ -38,7 +42,7 @@ a{
       font-size: 16px;
       font-style: normal;
       font-weight: 400;
-      line-height: 30px;
+      line-height: 28px;
       margin-top: 20px;
       margin-bottom: 39px;
 }
@@ -55,25 +59,12 @@ a{
       font-weight: 700;
 }
 
-.pink_btn{
+.btn{
       padding: 18px 40px;
       font-size: 18px;
       font-weight: 500;
       border-radius: 50px;
       border: none;
-      background-color: #FF42A5;
-      color: #fff;
-      letter-spacing: 1px;
-      font-family: 'Barlow Condensed', sans-serif; 
-}
-
-.blue_btn{
-      padding: 18px 40px;
-      font-size: 18px;
-      font-weight: 500;
-      border-radius: 50px;
-      border: none;
-      background-color: #4EC5F7;
       color: #fff;
       letter-spacing: 1px;
       font-family: 'Barlow Condensed', sans-serif; 
@@ -183,6 +174,16 @@ a{
 .banner_image img{
       width: 100%;
 }
+
+.banner_pink_btn{
+      background-color: #FF42A5;
+      margin-right: 15px;
+}
+
+.banner_blue_btn{
+      background-color: #4EC5F7;
+}
+
 /* banner end */
 
 /* gamer section start */
@@ -213,6 +214,10 @@ a{
 .gamer_sm-title{
       margin-top: 40px;
       bottom: 20px;
+}
+
+.gamer_btn{
+      background-color: #FF42A5;
 }
 
 /* gamer section end */
@@ -304,14 +309,14 @@ a{
 }
 /* plat-instantly section end */
 
-/* plat-games section start */
+/* play-games section start */
 
 .play_games{
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       column-gap: 10px;
       place-items: center;
-      padding: 120px 0;
+      padding: 120px 5%;
 }
 
 .play_games_para{
@@ -333,7 +338,68 @@ a{
       width: 100%;
 }
 
-/* plat-games section end */
+/* play-games section end */
+
+/* careers section start */
+
+.careers{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #FF42A5;
+      background-image: url('../images/Group\ 65.png');
+      background-position: right;
+      background-repeat: no-repeat;
+      background-size: contain;
+}
+
+.careers_text{
+      width: 40%;
+      color: #fff;
+      text-align: left;
+      padding: 100px 5%;
+}
+
+.career_title{
+      color: #fff;
+      margin-bottom: 20px;
+      /* margin-top: 50px; */
+}
+
+.career_para{
+      color: #fff;
+      text-align: left;
+      margin: 0 0 10px 0;
+}
+
+.careers_text_inner{
+      display: flex;
+      justify-content: space-between;
+}
+
+.careers_text_inner ul{
+      margin-bottom: 60px;
+}
+
+.careers_text_inner ul li{
+      list-style: none;
+      margin: 10px 0;
+      font-weight: 600;
+      font-size: 20px;
+      margin-bottom: 0px;
+}
+
+.careers_btn{
+      color: #FF42A5;
+      background-color: #fff;
+      margin-bottom: 60px;
+}
+
+.careers_image{
+      width: 60%;
+}
+
+/* careers section end */
 
 
 
@@ -441,9 +507,46 @@ RESPONSIVE CODE START
             position: absolute;
             width: 40%;
             bottom: -50px;
-            right: -55px;
+            right: -40px;
       }
 
+      .careers{
+            flex-direction: column;
+            padding: 80px 0;
+            margin-top: 120px;
+            background-image: none;
+      }
+
+      .careers_text{
+            padding: 0px;
+            width: 90%;
+      }
+
+      .career_para{
+            text-align: left;
+      }
+
+      .career_text_inner_left ul li{
+            font-size: 14px;
+      }
+
+      .career_text_inner_right ul li{
+            font-size: 14px;
+      }
+
+      .careers_btn{
+            margin-bottom: 200%;
+      }
+
+      .careers_image{
+            background-image: url('../images/Group\ 65.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 100%;
+            height: 40vh;
+            margin-top: 80px;
+      }
 
     }
 
@@ -460,5 +563,28 @@ RESPONSIVE CODE START
             margin-top: 100px;
             text-align:justify;
       }
+
+      .careers{
+            flex-direction: column;
+            padding: 80px 0;
+            margin-top: 120px;
+            background-image: none;
+      }
+
+      .careers_text{
+            padding: 0px;
+            width: 90%;
+      }
+
+      .careers_image{
+            background-image: url('../images/Group\ 65.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 100%;
+            height: 100vh;
+            margin-top: 80px;
+      }
+
       
     }
